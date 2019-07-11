@@ -174,7 +174,10 @@
 
        </div>
        <script type="text/javascript">
-       
+       $(".dropdown").css({
+         "margin":"auto",
+         "width" : "200px"
+       })
        $(".dropdown-choice").click(function(e){
          e.preventDefault();
          var selection = $(this).html();

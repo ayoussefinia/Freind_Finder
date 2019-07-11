@@ -6,13 +6,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="body">
      <div class="container">
         <div class="jumbotron">
            <h1 class="text-center"><span class="fa fa-question-circle"></span>Survey Questions</h1>
            <hr>
-         </div>
-         <h1>About You</h1>
+        </div>
+         <h1 class="text-center">About You</h1>
          <form action="#">
              Name: 
              <div class="input-gourp">
@@ -23,149 +23,214 @@
                  <input type="text" class="form-control"  id="image" aria-label="Username" aria-describedby="basic-addon1">
              </div>
              <br><br>
-           <h2>Question 1</h2>
-           <p>you are a lone wolf and prefer the comfort of home to being around strangers</p>
-           <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+           <h2 class="text-center">Question 1</h2>
+           <p class="text-center">you are a lone wolf and prefer the comfort of home to being around strangers</p>
+           <div class="dropdown text-center">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
               <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+              <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-choice" data-ref="1" href="#" data-selected="false">1 (strongly agree)</a></li>
+                  <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                  <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                  <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                  <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
 
               </ul>
             </div>
             <br>
-            <h2>Question 2</h2>
-            <p>You prefer outdoorsy activities (hiking/biking) to indoorsy activities (gaming/watching movies)</p>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+            <h2 class="text-center">Question 2</h2>
+            <p class="text-center">You prefer outdoorsy activities (hiking/biking) to indoorsy activities (gaming/watching movies)</p>
+            <div class="dropdown text-center">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                <ul class="dropdown-menu text-center">
+                    <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                    <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                    <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                    <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                    <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
+                    </ul>
+              </div>
+             <br>
+             <h2 class="text-center">Question 3</h2>
+            <p class="text-center">You think "thick skin" is a valuable asset and making fun of one and other can be healthy in afriendship</p>
+            <div class="dropdown text-center">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
                 </ul>
               </div>
              <br>
-             <h2>Question 3</h2>
-            <p>You think "thick skin" is a valuable asset and making fun of one and other can be healthy in afriendship</p>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+             <h2 class="text-center">Question 4</h2>
+            <p class="text-center">Borrowing money makes things weird between friends and should be avoided.</p>
+            <div class="dropdown text-center">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
-                </ul>
-              </div>
-             <br>
-             <h2>Question 4</h2>
-            <p>Borrowing money makes things weird between friends and should be avoided.</p>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
                 </ul>
               </div>
               <br>
-            <h2>Question 5</h2>
-            <p>Documentaries are boaring.</p>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+            <h2 class="text-center">Question 5</h2>
+            <p class="text-center">Documentaries are boaring.</p>
+            <div class="dropdown text-center">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
                 </ul>
               </div>
               <br>
-              <h2>Question 6</h2>
-            <p>Friends should be able to stand eachother during stressful situations.</p>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+            <h2 class="text-center">Question 6</h2>
+            <p class="text-center">Friends should be able to stand eachother during stressful situations.</p>
+            <div class="dropdown text-center">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
                 </ul>
               </div>
               <br>
-              <h2>Question 7</h2>
-            <p>You're a competitor! Sports, trivia, smash bothers,  it doesn't matter, you're gonna come out on top.</p>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+            <h2 class="text-center">Question 7</h2>
+            <p class="text-center">You're a competitor! Sports, trivia, smash bothers,  it doesn't matter, you're gonna come out on top.</p>
+            <div class="dropdown text-center">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                <li><a href data-ref="2" data-selected="false"  class="dropdown-choice" ="#">2</a></li>
+                <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                <li><a class="dropdown-choice" data-ref="4" data-selected="false"  href="#">4</a></li>
+                <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#" >5 (strongly disagree)</a></li>
                 </ul>
               </div>
               <br>
-              <h2>Question 8</h2>
-            <p>Those with artistic ability are simply more interesting.</p>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+            <h2 class="text-center">Question 8</h2>
+            <p class="text-center">Those with artistic ability are simply more interesting.</p>
+            <div class="dropdown text-center">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"style="width: 190px">select level of agreement
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-choice" data-ref="1" href="#" data-selected="false">1 (strongly agree)</a></li>
+                <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
                 </ul>
               </div>
               <br>
-              <h2>Question 9</h2>
-              <p>Intense philisophical conversations deep into the night? Count me in.</p>
-              <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+              <h2 class="text-center">Question 9</h2>
+              <p class="text-center">Intense philisophical conversations deep into the night? Count me in.</p>
+              <div class="dropdown text-center">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="width: 190px">select level of agreement
                   <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                  <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                  <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                  <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                  <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                  <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                  <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                  <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                  <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                  <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                  <li><a class="dropdown-choice" data-ref="5" data-selected="false" href="#">5 (strongly disagree)</a></li>
                   </ul>
                 </div>
                 <br>
-                <h2>Question 10</h2>
-                <p>Beer over mixed drinks any day of the week.</p>
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">select level of agreement
+                <h2 class="text-center">Question 10</h2>
+                <p class="text-center">Beer over mixed drinks any day of the week.</p>
+                <div class="dropdown text-center">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="width: 190px">select level of agreement
                     <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-choice" data-ref="1" href="#">1 (strongly agree)</a></li>
-                    <li><a href data-ref="2" class="dropdown-choice" ="#">2</a></li>
-                    <li><a class="dropdown-choice" data-ref="3" href="#">3</a></li>
-                    <li><a class="dropdown-choice" data-ref="4" href="#">4</a></li>
-                    <li><a class="dropdown-choice" data-ref="5" href="#">5 (strongly disagree)</a></li>
+                    <ul class="dropdown-menu text-center">
+                    <li><a class="dropdown-choice" data-ref="1" data-selected="false" href="#">1 (strongly agree)</a></li>
+                    <li><a href data-ref="2" class="dropdown-choice" data-selected="false" href="#">2</a></li>
+                    <li><a class="dropdown-choice" data-ref="3" data-selected="false" href="#">3</a></li>
+                    <li><a class="dropdown-choice" data-ref="4" data-selected="false" href="#">4</a></li>
+                    <li><a class="dropdown-choice" data-ref="5" data-selected="false"href="#">5 (strongly disagree)</a></li>
                     </ul>
                   </div>
-                  <br>
+                  <br><br><br><br>
+                  
+                  <div class="text-center">
+                      <button class="btn btn-primary" id="submit-form" data-toggle="dropdown" style="width: 190px">Submit Survey
+                      </button>
+                  </div>
+                  <br><br><br><br>
           </form>
+
        </div>
+       <script type="text/javascript">
+       
+       $(".dropdown-choice").click(function(e){
+         e.preventDefault();
+         var selection = $(this).html();
+         $(this).attr("data-selected","true")
+         $(this).parent().parent().prev().text(selection)
+        //  console.log($(this).attr("data-selected"));
+        //  console.log($(this).html());
+        //  console.log($(this).parent().parent().prev().text())
+         console.log('inside the event handler');
+       });
+       $("#submit-form").click(function(e){
+         e.preventDefault();
+        var choices =  $('.dropdown-choice');
+        var choicesArr = [];
+        var name = $("#name").val();
+        var imageUrl = $("#image").val();
+        for(let i=0; i<choices.length; i++) {
+          if ($(choices[i]).attr('data-selected') == 'true') {
+            choicesArr.push(Number($(choices[i]).attr('data-ref')));
+          };
+        }
+        console.log(choicesArr);
+        console.log(name);
+        console.log(imageUrl);
+        console.log($(choices[0]).attr("data-ref"));
+        var data = {
+          "name": name,
+          "photo" : imageUrl,
+          "scores" : choicesArr
+        }
+        
+        $.ajax({
+          type: "POST",
+          url: "/api/friends",
+          data: data
+        }).then(function(response) {
+          console.log(response);
+          var header = $("<h1>").text("Your Best Friend Match Is:").css("text-align","center");
+          var friendDiv = $("<div>").addClass("friend-div");
+          var friendPic = $("<img>").attr("src", response.image);
+          var friendName = $("<h1>").text(response.name).css("text-align","center")
+          friendDiv.append(header);
+          friendDiv.append(friendPic);
+          friendDiv.append(friendName);
+          friendDiv.css({
+            "position" : "absolute",
+            "bottom" : "10vh",
+            "left": "10vw"
+          })
+          
+          $(".body").append(friendDiv);
+          $(".body").scrollTop(0);
+        });
+
+       });
+       </script>
 </body>
 </html>
 

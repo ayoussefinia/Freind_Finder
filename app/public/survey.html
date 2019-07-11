@@ -216,7 +216,7 @@
           var friendDiv = $("<div>").addClass("friend-div");
           var friendPic = $("<img>").attr("src", response.image);
           var friendName = $("<h1>").text(response.name).css("text-align","center");
-          var refreshButton = $("<button>").text('Try Again').addClass('refresh-button').css("text-align","center");
+          var refreshButton = $("<button>").text('Try Again').addClass('refresh-button').css("margin","auto");
           friendDiv.append(header);
           friendDiv.append(friendPic);
           friendDiv.append(friendName);
@@ -240,6 +240,10 @@
       //    console.log('clicked try again');
       //     location.reload();
       //   });
+
+      $(".body").on("click", ".refresh-button", function(event){
+        location.reload();
+      });
        </script>
 </body>
 </html>

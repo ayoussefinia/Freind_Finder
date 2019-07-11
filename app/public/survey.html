@@ -215,21 +215,31 @@
           var header = $("<h1>").text("Your Best Friend Match Is:").css("text-align","center");
           var friendDiv = $("<div>").addClass("friend-div");
           var friendPic = $("<img>").attr("src", response.image);
-          var friendName = $("<h1>").text(response.name).css("text-align","center")
+          var friendName = $("<h1>").text(response.name).css("text-align","center");
+          var refreshButton = $("<button>").text('Try Again').addClass('refresh-button').css("text-align","center");
           friendDiv.append(header);
           friendDiv.append(friendPic);
           friendDiv.append(friendName);
+          friendDiv.append(refreshButton);
           friendDiv.css({
             "position" : "absolute",
             "bottom" : "10vh",
-            "left": "10vw"
+            "left": "10vw",
+            "background-color":"white"
           })
           
           $(".body").append(friendDiv);
-          $(".body").scrollTop(0);
+          window.scrollTo(0,0);
         });
 
+
+
        });
+
+      //  $(".refresh-button").on(function() {
+      //    console.log('clicked try again');
+      //     location.reload();
+      //   });
        </script>
 </body>
 </html>
